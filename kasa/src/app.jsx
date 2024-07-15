@@ -5,7 +5,7 @@ import Footer from './components/Footer/index.jsx';
 import Home from './pages/home';
 import About from './pages/a_propos';
 import FicheAppartement from './pages/apartement-page';
-import Error from './pages/404';
+import Error404 from './pages/404';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/FicheAppartement" element={<FicheAppartement />} />
-                <Route path="*" element={<Error />} />
+                <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer />
         </Router>
