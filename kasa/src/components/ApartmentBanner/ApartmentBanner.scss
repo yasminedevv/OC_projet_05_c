@@ -6,4 +6,15 @@
         border-radius: 25px;
         object-fit: cover;
     }
+
+@media screen and (max-width: 768px) {
+
+    img {
+
+        height: clamp(225px, 50vw, 415px);
+
+    }
+
+}
+
 }

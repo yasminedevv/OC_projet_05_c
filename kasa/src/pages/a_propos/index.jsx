@@ -1,12 +1,18 @@
 import React from 'react';
+import Banner from '../../components/banner';
+import Main from '../../components/main';
+import ApartmentDetails from '../../components/ApartmentDetails';
 
-
-function FicheAppartement() {
-    return (
-        <div>
-            <h1>Fiche appartement</h1>
-        </div>
-    );
+function About() {
+  return (
+    <Main>
+      <Banner />
+      <ApartmentDetails />
+      <ApartmentDetails />
+      <ApartmentDetails />
+      <ApartmentDetails />
+    </Main>
+  );
 }
 
-export default FicheAppartement
+export default About;

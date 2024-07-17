@@ -4,3 +4,10 @@
     margin-bottom: 50px;
 }
 
+
+@media screen and (max-width: 768px) {
+    .votre-classe {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+}
