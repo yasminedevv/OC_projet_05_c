@@ -1,23 +1,25 @@
+@import '../variables/colors.scss';
+@import '../variables/mixins.scss';
+
 .apartement_grid {
-    background-color: #f6f6f6;
-    border-radius: 25px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    flex-wrap: wrap;
-    padding: 50px;
-    margin-bottom: 30px;
-    @media screen and (max-width: 880px) {
-      background-color: white;
-    }
+  background-color: $secondary-color;
+  border-radius: 25px;
+  min-height: 100vh;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-bottom: 30px;
+  @include flex-center(stretch);
+  @media screen and (max-width: 880px) {
+    background-color: $white-color;
   }
-  
-  @media screen and (max-width: 930px) {
-    .apartement_grid {
-      margin-bottom: 0;
-      padding: 22px 0;
-      justify-content: center;
-      row-gap: 22px;
-    }
+}
+
+@media screen and (max-width: 930px) {
+  .apartement_grid {
+    margin-bottom: 0;
+    padding: 22px 0;
+    justify-content: center;
+    gap: 22px;
   }
+}

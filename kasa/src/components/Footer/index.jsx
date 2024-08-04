@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.scss';
 import Logo from '../../Assets/logo_kasa_blanc.png';
+
 function Footer() {
     return (
         <div className="footer">

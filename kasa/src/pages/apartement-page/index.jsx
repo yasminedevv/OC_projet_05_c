@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Main from '../../components/main';
-import ApartmentBanner from '../../components/ApartmentBanner';
+import LogementsCarousel from '../../components/LogementsCarousel';
 import ApartmentInfos from '../../components/ApartmentInfos';
 import ApartmentDetails from '../../components/ApartmentDetails';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -9,7 +9,7 @@ function FicheAppartement() {
   const { id } = useParams();
   const [apartmentData, setApartmentData] = useState(null);
   const [fetchComplete, setFetchComplete] = useState(false);
-  const navigate = useNavigate(); // Utilisation de useNavigate pour la redirection
+  const navigate = useNavigate();
 
   useEffect(() => {
     let isMounted = true;
@@ -57,10 +57,7 @@ function FicheAppartement() {
 
   return (
     <Main>
-      <ApartmentBanner
-        images={apartmentData.pictures}
-        additionalClass="about-banner"
-      />
+      <LogementsCarousel images={apartmentData.pictures} />
       <ApartmentInfos data={apartmentData} />
       <div className="apartment-details__container">
         <ApartmentDetails
